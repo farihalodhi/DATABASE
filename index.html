@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TripExplorer</title>
+  <link rel="stylesheet" href="STYLECSS/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="logo">🌍 TripExplorer</div>
+
+  <input type="text" id="searchInput" placeholder="Search places, hotels, food...">
+
+  <div class="auth" id="navAuth">
+    <a href="login.html">Login</a>
+    <a href="signup.html">Signup</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Discover Amazing Places</h1>
+    <p>Find hotels, restaurants & travel experiences near you</p>
+  </div>
+</section>
+
+<div class="filters">
+  <button class="active">All</button>
+  <button>Hotels</button>
+  <button>Restaurants</button>
+  <button>Tourist Spots</button>
+</div>
+
+<div id="places" class="grid"></div>
+
+<script src="js/data.js"></script>
+<script src="js/home.js"></script>
+
+</body>
+</html>

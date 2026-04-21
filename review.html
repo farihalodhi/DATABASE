@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Write Review - TripExplorer</title>
+  <link rel="stylesheet" href="STYLECSS/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="logo">🌍 TripExplorer</div>
+  <div class="auth">
+    <a href="index.html">Home</a>
+    <a href="login.html">Login</a>
+  </div>
+</header>
+
+<div class="review-container">
+
+  <div class="place-box">
+    <h2 id="placeName">Place Name</h2>
+    <p id="placeLocation">Location</p>
+  </div>
+
+  <div class="form-box">
+    <h3>Write Your Review</h3>
+    <textarea id="comment" placeholder="Share your experience..."></textarea>
+    <label>Rating (1–5):</label>
+    <input id="rating" type="number" min="1" max="5">
+    <button onclick="submitReview()">Submit Review</button>
+  </div>
+
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/review.js"></script>
+
+</body>
+</html>
